@@ -24,7 +24,19 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Edh-DS-U5W">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BGI-fE-d2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BGI-fE-d2R" secondAttribute="trailing" id="EY7-Q4-mhZ"/>
+                                    <constraint firstItem="BGI-fE-d2R" firstAttribute="leading" secondItem="Edh-DS-U5W" secondAttribute="leading" id="dsb-pn-81i"/>
+                                    <constraint firstAttribute="bottom" secondItem="BGI-fE-d2R" secondAttribute="bottom" id="ecn-Rn-OGe"/>
+                                    <constraint firstItem="BGI-fE-d2R" firstAttribute="top" secondItem="Edh-DS-U5W" secondAttribute="top" id="fh0-qW-BO8"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,6 +47,9 @@
                             <constraint firstAttribute="trailing" secondItem="Edh-DS-U5W" secondAttribute="trailing" id="e29-gq-1mQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblEvents" destination="BGI-fE-d2R" id="b0z-Hs-03y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

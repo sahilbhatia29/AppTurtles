@@ -10,6 +10,7 @@
 
 @interface EventViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 
+@property (weak, nonatomic) IBOutlet UITableView *tblEvents;
 
 @end
 
